@@ -1,14 +1,26 @@
-// cambiar el titlulo de las cards apuntando a los h5
+console.log("Js Activo...!!!")
 
-const h5 = document.querySelector("h5");
-console.log(h5);
+let h1_text = document.querySelector(".productos");
+h1_text.innerHTML = "Un Garage cualquiera...";
 
-h5.innerHTML= "";
+let section = document.querySelector(".content");
 
-// cambiar el texto de las cards apuntando a los card_Text
-const card_Text = document.querySelector(".card-text");
-card_Text.innerHTML = "Something like a description..."
+let array = [];
 
-// cambiar el archivo de imágen de la card...
-const img = document.querySelector("img");
-img.src = "https://media.istockphoto.com/id/1371322868/es/foto/ordenador-port%C3%A1til-con-pantalla-en-blanco-blanco.jpg?s=612x612&w=is&k=20&c=Y3rNCjjWlIw5x9RoIbTqL0cC-TUIgLy_VmFvOLP8lwE=";
+for (let i = 1; i <= 9; i++) {
+    array.push(`
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <img src="https://66d9ee6caa07a954166f10ed--gregarious-melba-cacdba.netlify.app/${i}.jpg" class="card-img-top img-fluid card-image" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Auto N° ${i}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://66d9ee6caa07a954166f10ed--gregarious-melba-cacdba.netlify.app/${i}.jpg" class="btn btn-primary">Mostrar</a>
+                </div>
+            </div>
+        </div>
+        `);
+}
+
+section.innerHTML = array;
