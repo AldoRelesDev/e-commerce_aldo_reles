@@ -1,7 +1,7 @@
 console.log("Js Activo...!!!")
 
 let h1_text = document.querySelector(".productos");
-h1_text.innerHTML = "Un Garage cualquiera...";
+h1_text.innerHTML = "El Garage del vecino de Julio...";
 
 let section = document.querySelector(".content");
 

@@ -7,10 +7,6 @@
     font-family:"Montserrat", sans-serif;
   }
   
-  body {
-    background-color: #f4f4f4;
-  }
-  
   h1{
     color: #737af5;
     font-size: 2rem;
@@ -33,7 +29,7 @@ section{
     width: 100%;
 }
 
-  .card{
+.card{
     border-radius: 10px 10px 0px 0px;
     background-color: #f3f3f3;
     transition: all 0.3s ease-in-out;
